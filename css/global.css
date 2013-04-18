@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/****************************** General Layout *******************************/
+body {
+	margin: 0;
+	padding: 0;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 990px;
+	min-width: 480px;
+}
+
+.container-overflow {
+	overflow: hidden;
+	text-align: left;
+}
+
+.clearfloat {
+	width: 100%;
+	clear: both;
+}
+
+.inline-list {
+	display: inline;
+  	margin: 10px 0;
+  	list-style: none;
+}
+
+/*****************************************************************************/
+
+
+/*************************** Header & Menu *****************************/
+.dark-bg {
+	background: #600;
+}
+
+.container-header-left {
+	width: 60%;
+	float: left;
+}
+
+.container-header-right {
+	width: 40%;
+	float: left;
+}
+
+.menu-list {
+	float: right;
+	clear: right;
+	margin: 0 2px;
+	list-style: none;
+}
+
+.menu {
+	text-align: center;
+}
+
+.menu a:link {
+	font: #fff;	
+}
+
+.menu a:hover {
+	background: #CF9;
+	font: #600;
+}
+
+/***************************************************************************/
+
+
+/****************************** Content ***********************************/
+
+.contentleft {
+	width: 65%;
+	color: #000;
+	float: left;
+}
+
+.content-inner {
+	width: auto;
+	margin: 15px 0px;
+}
+
+.contentright {
+	width: 35%;
+	color: #000;
+	float: left;
+	margin: 10px 0;
+}
+
+.content-inner-right {
+	margin-left: 5px;
+}
+/***************************************************************************/
+
+
+/********************************* Footer *********************************/
+
+.socialmedia {
+	width: 25%;
+	min-width: 100px;
+	float: right;
+}
+
+.container-footer {
+	max-width: 742px;
+	min-width: 200px;
+	float: left;
+}
+
+.small-column {
+	max-width: 247px;
+	min-width: 100px;
+	float: left;
+	padding: 5px;
+}
+
+/************************************************************************/
+
+
+/********************************* Text *********************************/
+.text-black {
+	color: #000;
+}
+
+.text-white {
+	color: #FFF;
+}
+
+.text-brown {
+	color: #603;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.footer-text {
+	font-size: 0.9em;
+	font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin: 10px 0;
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 1.6em;
+	color: #FFF;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 1em;
+	font: normal italic Georgia, "Times New Roman", Times, serif;
+}
+
+h1, .text-white a:link, a:visited, a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+p a:link, a:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: #600;
+}
+
+/***************************************************************************/
+
+
+
+/********************************** Images *********************************/
+.image_right {
+	width: auto;
+	float: right;
+	margin-top: 10px;
+	margin-left: 10px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.inner-shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+.bottom-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px #333;
+	   -moz-box-shadow: 0 8px 6px -6px #333;
+	        box-shadow: 0 8px 6px -6px #333;
+}
+
+/***************************************************************************/
+
+
+
+/********************************** Alerts *********************************/
+.alert {
+	border-radius: 15px;
+	text-align: center;
+	width: auto;
+	margin: 5px;
+	padding: 2px;
+	background-color: #CFF;
+	border: solid #00F 3px;
+}
+
+.alert-victory {
+	background-color: #DCFFC0;
+	border: solid #0C3 3px;
+}
+
+.alert-warning {
+	background-color: #FFC8BC;
+	border: solid #F00 3px;
+}
+
+.alert-error {
+	background-color: #FFF7BC;
+	border: solid #F90 3px;
+}
+
+/************************************************************************/
