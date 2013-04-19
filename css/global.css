@@ -50,15 +50,13 @@ body {
 }
 
 .menu-list {
-	float: right;
-	clear: right;
 	margin: 0 2px;
 	list-style: none;
 }
 
 .menu {
-	text-align: center;
-}
+ 	display: inline-block;
+ }
 
 .menu a:link {
 	font: #fff;	
