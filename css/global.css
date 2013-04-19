@@ -35,27 +35,28 @@ body {
 
 
 /*************************** Header & Menu *****************************/
-.dark-bg {
+header, footer {
 	background: #600;
 }
 
-.container-header-left {
+.header-left {
 	width: 60%;
 	float: left;
 }
 
-.container-header-right {
+nav {
 	width: 40%;
 	float: left;
 }
 
 .menu-list {
-	margin: 0 2px;
 	list-style: none;
+	margin: 0;
 }
 
 .menu {
  	display: inline-block;
+ 	padding: 0 0.5em;
  }
 
 .menu a:link {
@@ -74,7 +75,6 @@ body {
 
 .contentleft {
 	width: 65%;
-	color: #000;
 	float: left;
 }
 
@@ -104,7 +104,7 @@ body {
 	float: right;
 }
 
-.container-footer {
+.footer-left {
 	max-width: 742px;
 	min-width: 200px;
 	float: left;
@@ -127,10 +127,6 @@ body {
 
 .text-white {
 	color: #FFF;
-}
-
-.text-brown {
-	color: #603;
 }
 
 .text-center {
@@ -170,14 +166,26 @@ h5 {
 	font: normal italic Georgia, "Times New Roman", Times, serif;
 }
 
-h1, .text-white a:link, a:visited, a:hover {
+h1, .text-white a, a:visited, a:hover {
 	color: #FFF;
 	text-decoration: none;
 }
 
-p a:link, a:hover {
-	text-decoration: none;
-	font-weight: bold;
+.content-inner a {
+	color: #600;
+}
+
+header, footer {
+	color: #FFF;
+}
+
+footer a, footer a:visited, footer a:hover, footer a:active {
+	color: #FFF;
+	font: bold;
+}
+
+nav a:hover, nav a:active {
+	background: #CF9;
 	color: #600;
 }
 
