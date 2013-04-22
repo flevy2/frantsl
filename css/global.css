@@ -173,6 +173,8 @@ h1, .text-white a, a:visited, a:hover {
 
 .content-inner a {
 	color: #600;
+	font: bold;
+	text-decoration: none;
 }
 
 header, footer {
