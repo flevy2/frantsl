@@ -35,7 +35,7 @@ body {
 /*****************************************************************************/
 
 
-/*************************** Header & Menu *****************************/
+/*************************** Header & Navigation *****************************/
 header, footer {
 	background: #600;
 }
@@ -48,25 +48,30 @@ header, footer {
 nav {
 	width: 40%;
 	float: left;
+	margin: 0.95em 0;
 }
 
 .menu-list {
-	list-style: none;
 	margin: 0;
 }
 
-.menu {
+.menu-list li {
+	list-style: none;
+	margin: 0;
  	display: inline-block;
- 	padding: 0 0.5em;
- }
-
-.menu a:link {
-	font: #fff;	
 }
 
-.menu a:hover {
+.menu-list a:link {
+	color: #fff;
+	display: inline-block;
+	padding: 0.45em 0.5em;
+ 	border-radius: 0.25em;
+}
+
+.menu-list a:hover,
+.menu-list .active {
 	background: #CF9;
-	font: #600;
+	color: #600;
 }
 
 /***************************************************************************/
@@ -169,6 +174,10 @@ h5 {
 h1, .text-white a, a:visited, a:hover {
 	color: #FFF;
 	text-decoration: none;
+}
+
+h1 {
+	margin: 0.67em 0;
 }
 
 .content-inner a {
