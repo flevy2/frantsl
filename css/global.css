@@ -32,10 +32,53 @@ body {
   	list-style: none;
 }
 
+.text-center {
+	text-align: center;
+}
+
+p {
+	margin: 10px 0;
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 1.7em;
+	color: #FFF;
+	margin: 0.67em 0;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 1em;
+	font: normal italic Georgia, "Times New Roman", Times, serif;
+}
+
+h1 a, a:visited, a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+
 /*****************************************************************************/
 
 
-/*************************** Header & Navigation *****************************/
+
+/*************************** Header, Navigation, & Footer *****************************/
 header, footer {
 	background: #600;
 }
@@ -48,7 +91,7 @@ header, footer {
 nav {
 	width: 40%;
 	float: left;
-	margin: 0.95em 0;
+	margin: 1.2em 0;
 }
 
 .nav-list {
@@ -74,35 +117,6 @@ nav {
 	color: #600;
 }
 
-/***************************************************************************/
-
-
-/****************************** Content ***********************************/
-
-.contentleft {
-	width: 65%;
-	float: left;
-}
-
-.content-inner {
-	width: auto;
-	margin: 1.5em 0 2em;
-}
-
-.contentright {
-	width: 35%;
-	color: #000;
-	float: left;
-}
-
-.content-inner-right {
-	margin-left: 3em;
-}
-/***************************************************************************/
-
-
-/********************************* Footer *********************************/
-
 .socialmedia {
 	width: 25%;
 	min-width: 100px;
@@ -122,76 +136,13 @@ nav {
 	padding: 5px;
 }
 
-/************************************************************************/
-
-
-/********************************* Text *********************************/
-.text-black {
-	color: #000;
-}
-
-.text-white {
+header, footer {
 	color: #FFF;
-}
-
-.text-center {
-	text-align: center;
 }
 
 .footer-text {
 	font-size: 0.85em;
 	font: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}
-
-p {
-	margin: 10px 0;
-	font-size: 1em;
-}
-
-h1 {
-	font-size: 1.6em;
-	color: #FFF;
-}
-
-h2 {
-	font-size: 1.4em;
-}
-
-h3 {
-	font-size: 1.2em;
-}
-
-h4 {
-	font-size: 1.1em;
-	font-weight: bold;
-}
-
-h5 {
-	font-size: 1em;
-	font: normal italic Georgia, "Times New Roman", Times, serif;
-}
-
-h1, .text-white a, a:visited, a:hover {
-	color: #FFF;
-	text-decoration: none;
-}
-
-h1 {
-	margin: 0.67em 0;
-}
-
-a, a:visited, a:hover, a:active {
-	text-decoration: none;
-}
-
-.content-inner a {
-	color: #600;
-	font: bold;
-	text-decoration: none;
-}
-
-header, footer {
-	color: #FFF;
 }
 
 footer a, footer a:visited, footer a:hover, footer a:active {
@@ -202,6 +153,38 @@ footer a, footer a:visited, footer a:hover, footer a:active {
 nav a:hover, nav a:active {
 	background: #CF9;
 	color: #600;
+}
+
+/***************************************************************************/
+
+
+
+/****************************** Content ***********************************/
+
+.contentleft {
+	width: 65%;
+	float: left;
+}
+
+.content-inner {
+	width: auto;
+	margin: 1.5em 0 2em;
+}
+
+.content-inner a {
+	color: #600;
+	font: bold;
+	text-decoration: none;
+}
+
+.contentright {
+	width: 35%;
+	color: #000;
+	float: left;
+}
+
+.content-inner-right {
+	margin-left: 3em;
 }
 
 /***************************************************************************/
