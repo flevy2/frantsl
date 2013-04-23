@@ -51,25 +51,25 @@ nav {
 	margin: 0.95em 0;
 }
 
-.menu-list {
+.nav-list {
 	margin: 0;
 }
 
-.menu-list li {
+.nav-list li {
 	list-style: none;
 	margin: 0;
  	display: inline-block;
 }
 
-.menu-list a:link {
+.nav-list a:link {
 	color: #fff;
 	display: inline-block;
 	padding: 0.45em 0.5em;
  	border-radius: 0.25em;
-}
+2}
 
-.menu-list a:hover,
-.menu-list .active {
+.nav-list a:hover,
+.nav-list .active {
 	background: #CF9;
 	color: #600;
 }
@@ -178,6 +178,10 @@ h1, .text-white a, a:visited, a:hover {
 
 h1 {
 	margin: 0.67em 0;
+}
+
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
 }
 
 .content-inner a {
