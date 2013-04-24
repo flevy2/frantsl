@@ -105,7 +105,7 @@ input, select {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: Tahoma, Helvetica, sans-serif;
 	font-size: 16px;
 }
 
@@ -144,15 +144,17 @@ p {
 }
 
 h1 {
-	font-size: 2em;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	margin: 0.55em 0 0.67em;
+	font-size: 2.2em;
+	margin: 0.5em 0 0.67em;
 	font-weight: normal;
+	letter-spacing: 0.1em;
+	font-family: "IM Fell English", serif;
+	font-style: italic;
 }
 
 
 h2, h3, h4, h5, h6 {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "Crimson Text", serif;
 }
 
 h2 {
@@ -208,7 +210,9 @@ nav {
 	width: 40%;
 	float: left;
 	margin: 0.9em 0;
+	font-family: "Crimson Text", serif;
 	font-size: 1.08em;
+	letter-spacing: 0.1em;
 }
 
 .nav-list {
@@ -237,8 +241,10 @@ nav {
 
 footer {
 	background: #600;
-	color: #FFF;
+	color: #FFF;		
+	font-family: "Crimson Text", serif;
 	font-size: 0.85em;
+	letter-spacing: 0.15em;
 }
 
 .footer-left {
