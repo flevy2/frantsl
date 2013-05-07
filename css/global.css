@@ -105,13 +105,14 @@ input, select {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Georgia, serif;
+	font-family: Verdana, Geneva, sans-serif;
 	font-size: 16px;
 }
 
 .container {
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 1%;
+	width: 98%;
 	max-width: 1000px;
 	overflow: hidden;
 	text-align: left;
@@ -137,13 +138,13 @@ body {
 }
 
 p {
-  margin: 0.625em 0; /* 0.625em = 10px based on default body font size of 1em = 16px. */
+	margin: 0.625em 0; /* 0.625em = 10px based on default body font size of 1em = 16px. */
 	font-size: 1em;
 	line-height: 1.3em;
 }
 
 h1 {
-	font-size: 2.3em;
+	font-size: 2.5em;
 	margin: 0.5em 0 0.67em;
 	font-weight: normal;
 	letter-spacing: 0.1em;
@@ -157,20 +158,20 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 1.7em;
+	font-size: 1.8em;
 }
 
 h3 {
-	font-size: 1.3em;
+	font-size: 1.4em;
 }
 
 h4 {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	font-weight: bold;
 }
 
 h5 {
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 h1 a, a:visited, a:hover {
@@ -200,20 +201,21 @@ header {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#821414', endColorstr='#7a130c',GradientType=0 ); /* IE6-8 */
 
 	-moz-box-shadow:    inset 0 0 1.25em #300000; /* 1.25em = 20px based on default body font size of 16px. */
-  -webkit-box-shadow: inset 0 0 1.25em #300000; /* 1.25em = 20px based on default body font size of 16px. */
-  box-shadow:         inset 0 0 1.25em #300000; /* 1.25em = 20px based on default body font size of 16px. */
+  	-webkit-box-shadow: inset 0 0 1.25em #300000; /* 1.25em = 20px based on default body font size of 16px. */
+  	box-shadow:         inset 0 0 1.25em #300000; /* 1.25em = 20px based on default body font size of 16px. */
 }
 
 .header-left {
-	width: 60%;
+	width: 50%;
 	float: left;
 }
 
 nav {
-	width: 40%;
+	width: 50%;
 	float: left;
 	margin: 0.9em 0;
 	font-family: "Crimson Text", serif;
+	font-style: bold;
 	font-size: 1em;
 	letter-spacing: 0.2em;
 }
@@ -254,12 +256,13 @@ footer {
 	background: linear-gradient(to bottom,  #7a130c 34%,#660000 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a130c', endColorstr='#660000',GradientType=0 ); /* IE6-8 */
 
-  -moz-box-shadow:    inset 0 0 0.5em #3A0000; /* 0.5em = 8px based on body default font size of 16px */
-  -webkit-box-shadow: inset 0 0 0.5em #3A0000; /* 0.5em = 8px based on body default font size of 16px */
-  box-shadow:         inset 0 0 0.5em #3A0000; /* 0.5em = 8px based on body default font size of 16px */
+  	-moz-box-shadow:    inset 0 0 0.5em #3A0000; /* 0.5em = 8px based on body default font size of 16px */
+  	-webkit-box-shadow: inset 0 0 0.5em #3A0000; /* 0.5em = 8px based on body default font size of 16px */
+  	box-shadow:         inset 0 0 0.5em #3A0000; /* 0.5em = 8px based on body default font size of 16px */
 
 	color: #FFF;
 	font-family: "Crimson Text", serif;
+	font-style: bold;
 	font-size: 0.85em;
 	letter-spacing: 0.15em;
 }
