@@ -1,0 +1,198 @@
+$font-base: 1em
+$serif: Verdana, Geneva, sans-serif
+$serif-body: "Crimson Text", serif
+$white: #FFF
+$black: #000000
+$green: #CF9
+$brown: #7A130C
+
+@mixin nav-now
+	background: $green
+	color: $brown
+
+@mixin h1-a
+	color: $white
+	text-decoration: none
+
+@mixin footer-a
+	color: $white
+	font-weight: bold
+
+/****** General Layout ******/
+
+body
+	margin: 0
+	padding: 0
+	font: 
+		family: $serif
+		size: 16px
+
+.container
+	margin: 0 auto
+	padding: 0 1%
+	width: 98%
+	max-width: 1000px
+	overflow: hidden
+	text-align: left
+
+.container-header
+	padding-bottom: 1.35em
+
+.clearfloat
+	width: 100%
+	clear: both
+
+.inline-list
+	display: inline
+	margin: 0.625em
+	/* 0.625em = 10px based on default body font size of 1em = 16px */
+	list-style: none
+
+.text-center
+	text-align: center
+
+p
+	margin: 0.625em 0
+	/* 0.625em = 10px based on default body font size of 1em = 16px */
+	font-size: $font-base
+	line-height: $font-base + ($font-base * 0.3)
+
+h1
+	margin: 0.5em 0 0.67em
+	font:
+		size: 2.5em
+		weight: normal
+		family: "IM Fell English", serif
+		style: italic
+	letter-spacing: 0.1em
+
+h2, h3, h4, h5, h6
+	font-family: $serif-body
+
+h2
+	font-size: 1.8em
+
+h3
+	font:
+		size: 1.4em
+		weight: bold
+
+h4
+	font-size: 1.3em
+
+h5
+	font-size: $font-base
+
+h1 a, h1 a:visited, h1 a:hover
+	@include h1-a
+
+
+
+/**** Header, Navigation, & Footer ****/
+
+.header-left
+	width: 50%
+	float: left
+
+nav
+	width: 50%
+	float: left
+	margin: 0.9em 0
+	font:
+		family: $serif-body
+		size: $font-base
+	letter-spacing: 0.2em
+
+.nav-list
+	margin: 0
+	float: right
+
+	li
+		list-style: none
+		margin: 0
+		display: inline-block
+	
+	a
+		color: $white
+		display: inline-block
+		font-weight: bold
+		padding: 0.65em
+		border-radius: 2em
+		
+		&:hover
+			@include nav-now
+
+	.active
+		@include nav-now
+
+footer
+	color: $white
+	font:
+		family: $serif-body
+		weight: bold
+		size: 0.8em
+		letter-spacing: 0.15em
+
+	a, a:visited, a:hover, a:active
+		@include footer-a
+		
+.footer-left
+	width: 60%
+	float: left
+
+.small-column
+	width: 25%
+	float: left
+	padding: 1em
+
+.socialmedia
+	width: 40%
+	float: right
+	text-align: right
+
+/******* Main Content *******/
+.maincontent
+	box-shadow: inset 0 0 1em $black
+	/* 1em = 16px based on body font size */
+
+.contentleft
+	width: 70%
+	float: left
+
+contentright
+	width: 30%
+	color: $black
+	float: left
+
+.content-inner, aside
+	width: auto
+	margin: 1.5em 0 2em
+
+	a
+		color: $brown
+		font:
+			weight: bold
+			size: 1.05em
+		text-decoration: none
+
+aside
+	margin-left: 3em
+	font-size: 0.95em
+
+
+/****** Alerts ******/
+.alert
+	text-align: center
+	width: auto
+	margin: 1em 0
+	padding: 0.5em
+	background-color: #CFF
+	border: 
+		radius: 2em
+		style: solid
+		width: 0.25em
+		color: #0FF
+
+.alert-victory
+	background-color: #FFC8BC
+	border-color: #F00

@@ -1,0 +1,21 @@
+/*
+Errno::ENOENT: No such file or directory - global.sass
+
+Backtrace:
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:339:in `read'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:339:in `update_stylesheet'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:299:in `block in watch'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/Users/flevy2/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - global.sass"; }
