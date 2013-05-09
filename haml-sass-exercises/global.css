@@ -20,18 +20,18 @@ body {
   width: 100%;
   clear: both; }
 
+/* .inline-list margin 0.625em = 10px based on default body font size of 1em = 16px */
 .inline-list {
   display: inline;
   margin: 0.625em;
-  /* 0.625em = 10px based on default body font size of 1em = 16px */
   list-style: none; }
 
 .text-center {
   text-align: center; }
 
+/* p margin 0.625em = 10px based on default body font size of 1em = 16px */
 p {
   margin: 0.625em 0;
-  /* 0.625em = 10px based on default body font size of 1em = 16px */
   font-size: 1em;
   line-height: 1.3em; }
 
@@ -131,8 +131,8 @@ footer {
 
 contentright {
   width: 30%;
-  color: black;
-  float: left; }
+  float: left;
+  color: black; }
 
 .content-inner, aside {
   width: auto;

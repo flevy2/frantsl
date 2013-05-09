@@ -6,11 +6,15 @@ $black: #000000
 $green: #CF9
 $brown: #7A130C
 
+@mixin width-float($width, $float)
+	width: $width
+	float: $float
+
 @mixin nav-now
 	background: $green
 	color: $brown
 
-@mixin alert
+@mixin alert($background-color, $border-color)
 	background-color: $background-color
 	border-color: $border-color
 
@@ -38,18 +42,18 @@ body
 	width: 100%
 	clear: both
 
+/* .inline-list margin 0.625em = 10px based on default body font size of 1em = 16px */
 .inline-list
 	display: inline
 	margin: 0.625em
-	/* 0.625em = 10px based on default body font size of 1em = 16px */
-	list-style: none
+	list-style: none	
 
 .text-center
 	text-align: center
 
+/* p margin 0.625em = 10px based on default body font size of 1em = 16px */
 p
 	margin: 0.625em 0
-	/* 0.625em = 10px based on default body font size of 1em = 16px */
 	font-size: $font-base
 	line-height: $font-base + ($font-base * 0.3)
 
@@ -88,12 +92,10 @@ h1 a, h1 a:visited, h1 a:hover
 /**** Header, Navigation, & Footer ****/
 
 .header-left
-	width: 50%
-	float: left
+	@include width-float(50%, left)
 
 nav
-	width: 50%
-	float: left
+	@include width-float(50%, left)
 	margin: 0.9em 0
 	font:
 		family: $serif-body
@@ -135,17 +137,14 @@ footer
 		font-weight: bold
 		
 .footer-left
-	width: 60%
-	float: left
+	@include width-float(60%, left)
 
 .small-column
-	width: 25%
-	float: left
+	@include width-float(25%, left)
 	padding: 1em
 
 .socialmedia
-	width: 40%
-	float: right
+	@include width-float(40%, right)
 	text-align: right
 
 /******* Main Content *******/
@@ -154,13 +153,11 @@ footer
 	/* 1em = 16px based on body font size */
 
 .contentleft
-	width: 70%
-	float: left
+	@include width-float(70%, left)
 
 contentright
-	width: 30%
+	@include width-float(30%, left)
 	color: $black
-	float: left
 
 .content-inner, aside
 	width: auto
@@ -188,18 +185,13 @@ aside
 		radius: 2em
 		style: solid
 		width: 0.25em
-	background-color: #CFF
-	border-color: #0FF
-	
+	@include alert(#CFF, #0FF)
 
 .alert-victory
-	background-color: #DCFFC0
-	border-color: #0C3
+	@include alert(#DCFFC0, #0C3)
 
 .alert-warning
-	background-color: #FFC8BC
-	border-color: #F00
+	@include alert(#FFC8BC, #F00)
 
 .alert-error
-	background-color: #FFF7BC
-	border-color: #F90
+	@include alert(#FFF7BC, #F90)
