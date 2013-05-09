@@ -10,13 +10,9 @@ $brown: #7A130C
 	background: $green
 	color: $brown
 
-@mixin h1-a
-	color: $white
-	text-decoration: none
-
-@mixin footer-a
-	color: $white
-	font-weight: bold
+@mixin alert
+	background-color: ($value)
+	border-color: ($value)
 
 /****** General Layout ******/
 
@@ -84,7 +80,8 @@ h5
 	font-size: $font-base
 
 h1 a, h1 a:visited, h1 a:hover
-	@include h1-a
+	color: $white
+	text-decoration: none
 
 
 
@@ -103,6 +100,9 @@ nav
 		size: $font-base
 	letter-spacing: 0.2em
 
+	a:hover, a:active
+		@include nav-now
+
 .nav-list
 	margin: 0
 	float: right
@@ -118,11 +118,8 @@ nav
 		font-weight: bold
 		padding: 0.65em
 		border-radius: 2em
-		
-		&:hover
-			@include nav-now
 
-	.active
+	.active, a:hover
 		@include nav-now
 
 footer
@@ -134,7 +131,8 @@ footer
 		letter-spacing: 0.15em
 
 	a, a:visited, a:hover, a:active
-		@include footer-a
+		color: $white
+		font-weight: bold
 		
 .footer-left
 	width: 60%
@@ -186,13 +184,22 @@ aside
 	width: auto
 	margin: 1em 0
 	padding: 0.5em
-	background-color: #CFF
 	border: 
 		radius: 2em
 		style: solid
 		width: 0.25em
-		color: #0FF
+	background-color: #CFF
+	border-color: #0FF
+	
 
 .alert-victory
+	background-color: #DCFFC0
+	border-color: #0C3
+
+.alert-warning
 	background-color: #FFC8BC
 	border-color: #F00
+
+.alert-error
+	background-color: #FFF7BC
+	border-color: #F90
