@@ -1,0 +1,56 @@
+/**** Header, Navigation, & Footer ****/
+
+.header-left
+	@include width-float(50%, left)
+
+nav
+	@include width-float(50%, left)
+	margin: 0.9em 0
+	font:
+		family: $serif-body
+		size: $font-base
+	letter-spacing: 0.2em
+
+	a:hover, a:active
+		@include nav-now
+
+.nav-list
+	margin: 0
+	float: right
+
+	li
+		list-style: none
+		margin: 0
+		display: inline-block
+	
+	a
+		color: $white
+		display: inline-block
+		font-weight: bold
+		padding: 0.65em
+		border-radius: 2em
+
+	.active, a:hover
+		@include nav-now
+
+footer
+	color: $white
+	font:
+		family: $serif-body
+		weight: bold
+		size: 0.8em
+		letter-spacing: 0.15em
+
+	a, a:visited, a:hover, a:active
+		color: $white
+		font-weight: bold
+		
+.footer-left
+	@include width-float(60%, left)
+
+.small-column
+	@include width-float(25%, left)
+	padding: 1em
+
+.socialmedia
+	@include width-float(40%, right)
