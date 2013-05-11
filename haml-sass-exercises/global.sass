@@ -5,6 +5,8 @@ $white: #FFF
 $black: #000000
 $green: #CF9
 $brown: #7A130C
+$header-shadow: #300000
+$footer-shadow: #3A0000
 
 @mixin width-float($width, $float)
 	width: $width
@@ -13,6 +15,11 @@ $brown: #7A130C
 @mixin nav-now
 	background: $green
 	color: $brown
+
+@mixin inner-shadow($horiz, $vert, $blur, $spread, $color)
+	-webkit-box-shadow: $horiz $vert $blur $spread $color
+	-moz-box-shadow: $horiz $vert $blur $spread $color
+	box-shadow: $horiz $vert $blur $spread $color
 
 // Imported 3rd-Party CSS
 
