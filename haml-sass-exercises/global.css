@@ -98,6 +98,25 @@ h1 a, h1 a:visited, h1 a:hover {
   text-decoration: none; }
 
 /*** Header, Navigation, & Footer *** */
+header {
+  background: #7a130c;
+  -webkit-box-shadow: inset 0 0 1.25em #300000;
+  -moz-box-shadow: inset 0 0 1.25em #300000;
+  box-shadow: inset 0 0 1.25em #300000; }
+
+.inner-border {
+  color: #ccff99;
+  position: relative; }
+
+.inner-border:before {
+  border-bottom: 1em solid #ccff99;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 1em;
+  left: 0;
+  right: 0; }
+
 .header-left {
   width: 50%;
   float: left; }
@@ -135,7 +154,10 @@ footer {
   font-family: "Crimson Text", serif;
   font-weight: bold;
   font-size: 0.8em;
-  font-letter-spacing: 0.15em; }
+  font-letter-spacing: 0.15em;
+  -webkit-box-shadow: inset 0 0 0.5em #3a0000;
+  -moz-box-shadow: inset 0 0 0.5em #3a0000;
+  box-shadow: inset 0 0 0.5em #3a0000; }
   footer a, footer a:visited, footer a:hover, footer a:active {
     color: white;
     font-weight: bold; }
@@ -156,6 +178,8 @@ footer {
 /****** Main Content ****** */
 /* 1em = 16px based on body font size */
 .maincontent {
+  -webkit-box-shadow: inset 0 0 1em black;
+  -moz-box-shadow: inset 0 0 1em black;
   box-shadow: inset 0 0 1em black; }
 
 .contentleft {
