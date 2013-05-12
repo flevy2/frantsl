@@ -1,0 +1,71 @@
+/****** General Layout & Typography ******/
+
+body
+	margin: 0
+	padding: 0
+	font: 
+		family: $sans-serif
+		size: 16px
+
+.container
+	margin: 0 auto
+	padding: 0 3%
+	width: 94%
+	max-width: 1000px
+	overflow: hidden
+	text-align: left
+
+//
+	.container-header
+		padding-bottom: 1.35em
+
+.clearfloat
+	width: 100%
+	clear: both
+
+/* .inline-list margin 0.625em = 10px based on default body font size of 1em = 16px */
+.inline-list
+	display: inline
+	margin: 0.625em
+	list-style: none	
+
+.text-center
+	text-align: center
+
+a
+	text-decoration: none
+
+/* p margin 0.625em = 10px based on default body font size of 1em = 16px */
+p
+	margin: 0.625em 0
+	font-size: $font-base
+	line-height: $font-base + ($font-base * 0.3)
+
+h1
+	margin: 0.4em 0 0.4em
+	font:
+		size: 2.5em
+		weight: normal
+		family: $serif-title
+		style: italic
+	letter-spacing: 0.1em
+
+	a, a:visited, a:hover
+		color: $white
+
+h2, h3, h4, h5, h6
+	font-family: $serif-body
+
+h2
+	font-size: 1.8em
+
+h3
+	font:
+		size: 1.4em
+		weight: bold
+
+h4
+	font-size: 1.3em
+
+h5
+	font-size: $font-base

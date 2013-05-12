@@ -1,0 +1,36 @@
+$font-base: 1em
+$sans-serif: Verdana, Geneva, sans-serif
+$serif-body: "Crimson Text", serif
+$serif-title: "IM Fell English", serif
+$white: #FFF
+$black: #000000
+$green: #CF9
+$brown: #7A130C
+$brown-shadow: #3A0000
+
+@mixin width-float($width, $float)
+	width: $width
+	float: $float
+
+@mixin nav-now
+	background: $green
+	color: $brown
+
+@mixin inner-shadow($horiz, $vert, $blur, $spread, $color)
+	-webkit-box-shadow: $horiz $vert $blur $spread $color
+	-moz-box-shadow: $horiz $vert $blur $spread $color
+	box-shadow: $horiz $vert $blur $spread $color
+
+@mixin alert($background-color, $border-color)
+	background-color: $background-color
+	border-color: $border-color
+
+// Imported 3rd-Party CSS
+@import "reset"
+
+// Imported Stylesheets made for this project
+@import "genlayouttypography"
+@import "headernavfooter"
+@import "maincontent"
+@import "alert"
+@import "media"

@@ -1,0 +1,20 @@
+/****** Alerts ******/
+.alert
+	text-align: center
+	width: auto
+	margin: 1em 0
+	padding: 0.5em
+	border: 
+		radius: 2em
+		style: solid
+		width: 0.25em
+	@include alert(#CFF, #0FF)
+
+.alert-victory
+	@include alert(#DCFFC0, #0C3)
+
+.alert-warning
+	@include alert(#FFC8BC, #F00)
+
+.alert-error
+	@include alert(#FFF7BC, #F90)

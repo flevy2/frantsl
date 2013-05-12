@@ -1,0 +1,77 @@
+/**** Header, Navigation, & Footer ****/
+
+header
+	background: $brown
+	@include inner-shadow(inset, 0, 0, 0.5em, $brown-shadow)
+
+//
+	.stripe
+		color: $green
+		position: relative
+
+	.stripe:before
+		border-bottom: 0.75em solid $green
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 1em
+		left: 0
+		right: 0
+
+.header-left
+	@include width-float(50%, left)
+
+nav
+	@include width-float(50%, left)
+	margin: 1em 0
+	font:
+		family: $serif-title
+		size: $font-base
+		weight: bold
+	letter-spacing: 0.1em
+
+	a:hover, a:active
+		@include nav-now
+
+.nav-list
+	margin: 0
+	float: right
+
+	li
+		list-style: none
+		margin: 0
+		display: inline-block
+	
+	a
+		color: $white
+		display: inline-block
+		padding: 0.65em
+		border-radius: 2em
+
+	.active, a:hover
+		@include nav-now
+
+footer
+	background: $brown
+	color: $white
+	font:
+		family: $serif-title
+		weight: bold
+		size: 0.9em
+		letter-spacing: 0.3em
+
+	a, a:visited, a:hover, a:active
+		color: $white
+		font-weight: bold
+
+	@include inner-shadow(inset, 0, 0, 0.5em, $brown-shadow)
+		
+.footer-left
+	@include width-float(60%, left)
+
+.small-column
+	@include width-float(25%, left)
+	padding: 1em
+
+.socialmedia
+	@include width-float(40%, right)

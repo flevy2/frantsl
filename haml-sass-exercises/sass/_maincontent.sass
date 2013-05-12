@@ -1,0 +1,27 @@
+/******* Main Content *******/
+
+/* 1em = 16px based on body font size */
+.maincontent
+	@include inner-shadow(inset, 0, 0, 1em, $black)
+
+.contentleft
+	@include width-float(70%, left)
+
+.contentright
+	@include width-float(30%, left)
+	color: $black
+
+.content-inner, aside
+	width: auto
+	margin: 1.5em 0 2em
+
+	a
+		color: $brown
+		font:
+			weight: bold
+			size: 1.05em
+		text-decoration: none
+
+aside
+	margin-left: 3em
+	font-size: 0.95em
