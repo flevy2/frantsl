@@ -1,0 +1,108 @@
+!!!5
+
+%html(xmlns="http://www.w3.org/1999.xhtml")
+	%head
+		%link(href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700|IM+Fell+English:400,400italic' rel='stylesheet' type='text/css')
+		%meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+		%title
+			Experiments | Fran&apos;s CSS Adventures
+		%link(rel="stylesheet" type="text/css" href="css/global.css")
+
+	%body
+		/ Header and Navigation
+		%header
+			.container
+				.header-left
+					%h1
+						%a(href="index.html")Fran&apos;s CSS Adventures
+				%nav
+					%ul.nav-list
+						%li
+							%a(href="index.html")Home
+						%li
+							%a(href="about.html")About
+						%li
+							%a.active(href="experiments.html")Experiments
+						%li
+							%a(href="blog.html")Blog
+
+		/ Main Content
+		.maincontent
+			.container
+				.contentleft
+					.content-inner
+						%h2 Experiments
+					%section.content-inner
+						%h3 Buttons
+						%p
+							Soon you'll see some mighty fine-lookin' buttons here. Check back later.
+					%section.content-inner
+						%h3 Alert Messages
+						%ul.inline-list
+							%li.alert
+								%strong Heads up!
+								This is an information alert message.
+								.x-close
+									x
+							%li.alert.alert-error
+								%strong Error! 
+								Something is amiss.
+								.x-close
+									x
+							%li.alert.alert-victory
+								%strong Victory!
+								.x-close
+									x
+							%li.alert.alert-warning
+								%strong Danger,
+								Will Robinson! Danger!
+								.x-close
+									x
+					%section.content-inner
+						%h3 Positioning
+						%p
+							This paragraph contains a few tooltip demonstrations. To see the tooltips, hover over the <a href="#">underlined text.
+							%span.tooltip
+								I'm a tooltip!
+							</a>
+							Tooltips are useful for placing <a href="#">comments
+							%span.tooltip
+								I have no comment at this time.
+							</a> within a text, for providing <a href="#">definitions
+							%span.tooltip
+								Defition: The formal statement of the meaning or significance of a word, phrase, idiom, etc., as found in dictionaries.
+							</a> of particular words, or for demonstrating how <a href="#">impressive
+							%span.tooltip
+								Aren't you impressed?
+							</a> tooltips look in action. That's right; you don't need a 
+							%em
+								reason
+							to use a tooltip. Tooltips are a reason unto themselves.
+				.contentright
+					%aside
+						%p
+							Insert flattering <a href="about.html">photo</a> here.
+						%p.text-center
+							Fran Levy
+					%aside
+						%p
+							Additional sidebar content goes here.
+					%aside
+						%p
+							And here.
+					%aside
+						%p
+							And here.
+
+		/ Footer
+		%footer
+			.container
+				.footer-left
+					%p
+						&copy; 2013 Fran Levy. All rights reserved.
+				.socialmedia
+					%p
+						Insert social media here
+
+		%script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js")
+		%script(src="js/script.js")

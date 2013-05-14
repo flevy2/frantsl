@@ -8,13 +8,24 @@
 		radius: 2em
 		style: solid
 		width: 0.25em
-	@include alert(#CFF, #0FF)
+	@include alert(#B5EDFB, #000080)
+
+.alert-error
+	@include alert(#FEFF91, #E5B113)
 
 .alert-victory
-	@include alert(#DCFFC0, #0C3)
+	@include alert(#DCFFC0, #006A05)
 
 .alert-warning
 	@include alert(#FFC8BC, #F00)
 
-.alert-error
-	@include alert(#FFF7BC, #F90)
+/* x-close opacity for IE8 and earlier is the "filter" value */
+.x-close
+	float: right
+	text-align: center
+	padding: 0.25em 0.5em 0.4em
+	border-radius: 2em
+	border: 0.05em solid #CCC
+	background-color: #fff
+	opacity: 0.6
+	filter: alpha(opacity=60)

@@ -1,100 +1,156 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700|IM+Fell+English:400,400italic' rel='stylesheet' type='text/css'>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Experiments | Fran's CSS Adventures</title>
-<link href="css/global.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-
-<!--Header and Navigation-->
-    <header class="stripe">
-    	<div class="container container-header">
-        	<div class="header-left">
-           		<h1> <a href="index.html">Fran's CSS Adventures</a></h1>
-        	</div>
-            <nav>
-            	<ul class="nav-list">
-                	<li>
-                    	<a href="index.html">Home</a>
-                    </li>
-                    <li>
-                    	<a href="about.html">About</a>
-                    </li>
-                	<li>
-                    	<a class="active" href="experiments.html">Experiments</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                </ul>
-          	</nav>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999.xhtml'>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700|IM+Fell+English:400,400italic' rel='stylesheet' type='text/css'>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <title>
+      Experiments | Fran&apos;s CSS Adventures
+    </title>
+    <link href='css/global.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!-- Header and Navigation -->
+    <header>
+      <div class='container'>
+        <div class='header-left'>
+          <h1>
+            <a href='index.html'>Fran&apos;s CSS Adventures</a>
+          </h1>
         </div>
+        <nav>
+          <ul class='nav-list'>
+            <li>
+              <a href='index.html'>Home</a>
+            </li>
+            <li>
+              <a href='about.html'>About</a>
+            </li>
+            <li>
+              <a class='active' href='experiments.html'>Experiments</a>
+            </li>
+            <li>
+              <a href='blog.html'>Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-<!--End Header and Navigation-->
-
-<!--Main Content-->
-    <div class="maincontent">
-        <div class="container">
-        	<div class="contentleft">
-            	<div class="content-inner">
-            		<h2>Experiments</h2>
-            	</div>
-                <div class="content-inner">
-                	<h3>Buttons</h3>
-                    <p>Soon you'll see some mighty fine-lookin' buttons here. Check back later.</p>
+    <!-- Main Content -->
+    <div class='maincontent'>
+      <div class='container'>
+        <div class='contentleft'>
+          <div class='content-inner'>
+            <h2>Experiments</h2>
+          </div>
+          <section class='content-inner'>
+            <h3>Buttons</h3>
+            <p>
+              Soon you'll see some mighty fine-lookin' buttons here. Check back later.
+            </p>
+          </section>
+          <section class='content-inner'>
+            <h3>Alert Messages</h3>
+            <ul class='inline-list'>
+              <li class='alert'>
+                <strong>Heads up!</strong>
+                This is an information alert message.
+                <div class='x-close'>
+                  x
                 </div>
-              <div class="content-inner">
-                    <h3>Alert messages</h3>
-                  	<ul class="inline-list">
-                  		<li class="alert">
-                        Heads up! This is an information alert message.</li>
-                        <li class="alert alert-error">
-                        Error! Something is amiss.</li>
-                        <li class="alert alert-victory">
-                        Victory!</li>
-                        <li class="alert alert-warning">
-                        Danger, Will Robinson! Danger!</li>
-                    </ul>
-            	</div>
-            	<div class="content-inner">
-            		<h3>Positioning</h3>
-                    <p>This paragraph contains a few tooltip demonstrations. To see the tooltips, hover over the bolded text. Tooltips are useful for placing comments within a text, for providing definitions of particular words, or for demonstrating how impressive tooltips look in action.
-              That's right; you don't need a <em>reason</em> to use a tooltip. Tooltips are a reason unto themselves.</div>
-            </div>
-           <div class="contentright">
-                <aside>
-                    <p>Insert flattering <a href="about.html">photo</a> here.</p>
-                    <p class="text-center">Fran Levy</p>
-                </aside>
-                <aside>
-                    Additional sidebar content goes here.
-                </aside>
-                <aside>
-                    And here.
-                </aside>
-                <aside>
-                    And here.
-                </aside>
-            </div>
+              </li>
+              <li class='alert alert-error'>
+                <strong>Error!</strong>
+                Something is amiss.
+                <div class='x-close'>
+                  x
+                </div>
+              </li>
+              <li class='alert alert-victory'>
+                <strong>Victory!</strong>
+                <div class='x-close'>
+                  x
+                </div>
+              </li>
+              <li class='alert alert-warning'>
+                <strong>Danger,</strong>
+                Will Robinson! Danger!
+                <div class='x-close'>
+                  x
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class='content-inner'>
+            <h3>Positioning</h3>
+            <p>
+              This paragraph contains a few tooltip demonstrations. To see the tooltips, hover over the <a href="#">underlined text.
+              <span class='tooltip'>
+                I'm a tooltip!
+              </span>
+              </a>
+              Tooltips are useful for placing <a href="#">comments
+              <span class='tooltip'>
+                I have no comment at this time.
+              </span>
+              </a> within a text, for providing <a href="#">definitions
+              <span class='tooltip'>
+                Defition: The formal statement of the meaning or significance of a word, phrase, idiom, etc., as found in dictionaries.
+              </span>
+              </a> of particular words, or for demonstrating how <a href="#">impressive
+              <span class='tooltip'>
+                Aren't you impressed?
+              </span>
+              </a> tooltips look in action. That's right; you don't need a
+              <em>
+                reason
+              </em>
+              to use a tooltip. Tooltips are a reason unto themselves.
+            </p>
+          </section>
         </div>
+        <div class='contentright'>
+          <aside>
+            <p>
+              Insert flattering <a href="about.html">photo</a> here.
+            </p>
+            <p class='text-center'>
+              Fran Levy
+            </p>
+          </aside>
+          <aside>
+            <p>
+              Additional sidebar content goes here.
+            </p>
+          </aside>
+          <aside>
+            <p>
+              And here.
+            </p>
+          </aside>
+          <aside>
+            <p>
+              And here.
+            </p>
+          </aside>
+        </div>
+      </div>
     </div>
-<!--End Main Content-->
-
-<!--Footer-->
+    <!-- Footer -->
     <footer>
-       <div class="container">
-            <div class="footer-left">
-                <p>&copy; 2013 Fran Levy. All rights reserved.</p>
-            </div>
-            <div class="socialmedia">
-              <p>Insert social media here</p>
-            </div>
-       </div>
+      <div class='container'>
+        <div class='footer-left'>
+          <p>
+            &copy; 2013 Fran Levy. All rights reserved.
+          </p>
+        </div>
+        <div class='socialmedia'>
+          <p>
+            Insert social media here
+          </p>
+        </div>
+      </div>
     </footer>
-<!--End Footer-->
-
-</body>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+    <script src='js/script.js'></script>
+  </body>
 </html>

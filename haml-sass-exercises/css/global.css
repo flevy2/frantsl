@@ -199,19 +199,42 @@ aside {
   border-radius: 2em;
   border-style: solid;
   border-width: 0.25em;
-  background-color: #ccffff;
-  border-color: cyan; }
+  background-color: #b5edfb;
+  border-color: navy; }
+
+.alert-error {
+  background-color: #feff91;
+  border-color: #e5b113; }
 
 .alert-victory {
   background-color: #dcffc0;
-  border-color: #00cc33; }
+  border-color: #006a05; }
 
 .alert-warning {
   background-color: #ffc8bc;
   border-color: red; }
 
-.alert-error {
-  background-color: #fff7bc;
-  border-color: #ff9900; }
+/* x-close opacity for IE8 and earlier is the "filter" value */
+.x-close {
+  float: right;
+  text-align: center;
+  padding: 0.25em 0.5em 0.4em;
+  border-radius: 2em;
+  border: 0.05em solid #cccccc;
+  background-color: white;
+  opacity: 0.6;
+  filter: alpha(opacity=60); }
 
 /*** Media Queries *** */
+/*** Tooltips *** */
+.tooltip {
+  display: none;
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 5px; }
+  .tooltip a {
+    position: relative;
+    text-decoration: none; }
+    .tooltip a:hover {
+      display: block; }
