@@ -1,11 +1,16 @@
 /**** Tooltips ****/
 
-// Anthony's method
+// Anthony Bruno's method
 
 
 /* anchor tag */
 .tooltip 
 	position: relative
+	color: $brown
+	font:
+		weight: normal
+		size: 1.05em
+	text-decoration: underline
 
 /* This is the span within anchor tag aka tooltip */
 /* "top: 100%"" is the height of anchor */
@@ -14,7 +19,6 @@
 	display: none
 	position: absolute
 	bottom: 175%
-	margin-top: -25px 
 	left: 0
 	background: $brown
 	color: $white
@@ -55,7 +59,7 @@
 	border-top: 1.1em solid $brown-shadow
 
 
-// (Original) Alternative: Anthony's tweaks to Scott's method
+// (Original) Alternative: Anthony Bruno's tweaks to Mike Gibson's method
 	.tooltip
 		position: relative
 		text-decoration: none

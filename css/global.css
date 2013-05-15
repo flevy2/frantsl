@@ -229,7 +229,11 @@ aside {
 /*** Tooltips *** */
 /* anchor tag */
 .tooltip {
-  position: relative; }
+  position: relative;
+  color: #7a130c;
+  font-weight: normal;
+  font-size: 1.05em;
+  text-decoration: underline; }
 
 /* This is the span within anchor tag aka tooltip */
 /* "top: 100%"" is the height of anchor */
@@ -238,7 +242,6 @@ aside {
   display: none;
   position: absolute;
   bottom: 175%;
-  margin-top: -25px;
   left: 0;
   background: #7a130c;
   color: white;
