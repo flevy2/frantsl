@@ -231,22 +231,18 @@ aside {
 .tooltip {
   position: relative; }
 
-/* This is the span within anchor tag aka tooltip */
+/* span within anchor tag aka tooltip */
 /* "top: 100%"" is the height of anchor */
 /* "margin-top" offsets the size of the arrow */
 .tooltip span {
   display: none;
   position: absolute;
-  bottom: 175%;
+  top: -100%;
   margin-top: -25px;
   left: 0;
-  background: #7a130c;
+  background: black;
   color: white;
-  padding: 0.4em 0.5em 0.5em 0.5em;
-  border-style: solid;
-  border-width: 0.1em;
-  border-color: #3a0000;
-  border-radius: 0.5em; }
+  padding: 5px; }
 
 /* show tooltip */
 .tooltip:hover span {
@@ -257,22 +253,10 @@ aside {
 .tooltip span:after {
   content: "";
   position: absolute;
-  bottom: -0.94em;
-  right: 1.5em;
+  bottom: -20px;
+  right: 0;
   width: 0;
   height: 0;
-  border-left: 1em solid transparent;
-  border-right: 1em solid transparent;
-  border-top: 1em solid #7a130c; }
-
-/* My own arrow "shadow" effect made by slightly offsetting a darker arrow shape beneath the original arrow */
-.tooltip span:before {
-  content: "";
-  position: absolute;
-  bottom: -1.1em;
-  right: 1.4em;
-  width: 0;
-  height: 0;
-  border-left: 1.1em solid transparent;
-  border-right: 1.1em solid transparent;
-  border-top: 1.1em solid #3a0000; }
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid black; }
