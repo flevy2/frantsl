@@ -36,7 +36,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Tahoma, Geneva, sans-serif;
   font-size: 16px; }
 
 .container {
@@ -67,7 +67,8 @@ a {
 p {
   margin: 0.625em 0;
   font-size: 1em;
-  line-height: 1.3em; }
+  line-height: 1.3em;
+  letter-spacing: 0.05em; }
 
 h1 {
   margin: 0.4em 0 0.4em;
@@ -80,27 +81,28 @@ h1 {
     color: white; }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Crimson Text", serif; }
+  font-family: "Crimson Text", serif;
+  letter-spacing: 0.05em; }
 
 h2 {
-  font-size: 1.8em; }
+  font-size: 2.1em; }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: bold; }
 
 h4 {
-  font-size: 1.3em; }
+  font-size: 1.4em; }
 
 h5 {
   font-size: 1em; }
 
 /*** Header, Navigation, & Footer *** */
 header {
-  background: #7a130c;
-  -webkit-box-shadow: inset 0 0 0.5em #3a0000;
-  -moz-box-shadow: inset 0 0 0.5em #3a0000;
-  box-shadow: inset 0 0 0.5em #3a0000; }
+  background: #97190f;
+  -webkit-box-shadow: inset 0 0 1em #3a0000;
+  -moz-box-shadow: inset 0 0 1em #3a0000;
+  box-shadow: inset 0 0 1em #3a0000; }
 
 .header-left {
   width: 50%;
@@ -214,36 +216,35 @@ aside {
   background-color: #ffc8bc;
   border-color: red; }
 
-/* x-close opacity for IE8 and earlier is the "filter" value */
 .x-close {
   float: right;
+  font-weight: bold;
+  color: #404040;
   text-align: center;
   padding: 0.25em 0.5em 0.4em;
   border-radius: 2em;
-  border: 0.05em solid #cccccc;
-  background-color: white;
-  opacity: 0.6;
-  filter: alpha(opacity=60); }
+  border: 0.15em solid #404040;
+  background-color: white; }
 
 /*** Media Queries *** */
 /*** Tooltips *** */
 /* anchor tag */
-.tooltip {
+a.tooltip {
   position: relative;
   color: #7a130c;
   font-weight: normal;
-  font-size: 1.05em;
+  font-size: 1em;
   text-decoration: underline; }
 
 /* This is the span within anchor tag aka tooltip */
 /* "top: 100%"" is the height of anchor */
 /* "margin-top" offsets the size of the arrow */
-.tooltip span {
+a.tooltip span {
   display: none;
   position: absolute;
-  bottom: 175%;
+  bottom: 160%;
   left: 0;
-  background: #7a130c;
+  background: #97190f;
   color: white;
   padding: 0.4em 0.5em 0.5em 0.5em;
   border-style: solid;
@@ -252,24 +253,24 @@ aside {
   border-radius: 0.5em; }
 
 /* show tooltip */
-.tooltip:hover span {
+a.tooltip:hover span {
   display: block; }
 
 /* Arrow http://css-tricks.com/snippets/css/css-triangle/ */
 /* "border-top" determine's arrow color */
-.tooltip span:after {
+a.tooltip span:after {
   content: "";
   position: absolute;
-  bottom: -0.94em;
+  bottom: -0.95em;
   right: 1.5em;
   width: 0;
   height: 0;
   border-left: 1em solid transparent;
   border-right: 1em solid transparent;
-  border-top: 1em solid #7a130c; }
+  border-top: 1em solid #97190f; }
 
 /* My own arrow "shadow" effect made by slightly offsetting a darker arrow shape beneath the original arrow */
-.tooltip span:before {
+a.tooltip span:before {
   content: "";
   position: absolute;
   bottom: -1.1em;

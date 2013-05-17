@@ -19,13 +19,18 @@
 .alert-warning
 	@include alert(#FFC8BC, #F00)
 
-/* x-close opacity for IE8 and earlier is the "filter" value */
+//
+	x-close opacity for IE8 and earlier is the "filter" value
 .x-close
 	float: right
+	font-weight: bold
+	color: $dark-grey
 	text-align: center
 	padding: 0.25em 0.5em 0.4em
 	border-radius: 2em
-	border: 0.05em solid #CCC
+	border: 0.15em solid $dark-grey
 	background-color: #fff
-	opacity: 0.6
-	filter: alpha(opacity=60)
+	//
+		opacity: 0.6
+	//
+		filter: alpha(opacity=60)

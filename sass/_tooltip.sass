@@ -4,23 +4,23 @@
 
 
 /* anchor tag */
-.tooltip 
+a.tooltip 
 	position: relative
 	color: $brown
 	font:
 		weight: normal
-		size: 1.05em
+		size: $font-base
 	text-decoration: underline
 
 /* This is the span within anchor tag aka tooltip */
 /* "top: 100%"" is the height of anchor */
 /* "margin-top" offsets the size of the arrow */
-.tooltip span 
+a.tooltip span 
 	display: none
 	position: absolute
-	bottom: 175%
+	bottom: 160%
 	left: 0
-	background: $brown
+	background: $light-brown
 	color: $white
 	padding: 0.4em 0.5em 0.5em 0.5em
 	border:
@@ -28,26 +28,28 @@
 		width: 0.1em
 		color: $brown-shadow
 		radius: 0.5em
+	//
+		@include inner-shadow(inset, -0.05em, 0.25em, 1em, $brown-shadow)
 
 /* show tooltip */
-.tooltip:hover span 
+a.tooltip:hover span 
 	display: block
 
 /* Arrow http://css-tricks.com/snippets/css/css-triangle/ */
 /* "border-top" determine's arrow color */
-.tooltip span:after
+a.tooltip span:after
 	content: ''
 	position: absolute
-	bottom: -0.94em
+	bottom: -0.95em
 	right: 1.5em
 	width: 0
 	height: 0
 	border-left: 1em solid transparent
 	border-right: 1em solid transparent
-	border-top: 1em solid $brown
+	border-top: 1em solid $light-brown
 
 /* My own arrow "shadow" effect made by slightly offsetting a darker arrow shape beneath the original arrow */
-.tooltip span:before
+a.tooltip span:before
 	content: ''
 	position: absolute
 	bottom: -1.1em
