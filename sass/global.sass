@@ -23,6 +23,11 @@ $dark-grey: #404040
 	-moz-box-shadow: $horiz $vert $blur $spread $color
 	box-shadow: $horiz $vert $blur $spread $color
 
+@mixin box-shadow($shadows...)
+	-webkit-box-shadow: $shadows
+	-moz-box-shadow: $shadows
+	box-shadow: $shadows
+
 @mixin alert($background-color, $border-color)
 	background-color: $background-color
 	border-color: $border-color

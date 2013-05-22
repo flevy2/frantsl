@@ -47,10 +47,6 @@ body {
   overflow: hidden;
   text-align: left; }
 
-.clearfloat {
-  width: 100%;
-  clear: both; }
-
 /* .inline-list margin 0.625em = 10px based on default body font size of 1em = 16px */
 .inline-list {
   display: inline;
@@ -72,7 +68,7 @@ p {
 
 h1 {
   margin: 0.4em 0 0.4em;
-  font-size: 2.5em;
+  font-size: 2.6em;
   font-weight: normal;
   font-family: "IM Fell English", serif;
   font-style: italic;
@@ -85,14 +81,14 @@ h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em; }
 
 h2 {
-  font-size: 2.1em; }
+  font-size: 2em; }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: bold; }
 
 h4 {
-  font-size: 1.4em; }
+  font-size: 1.3em; }
 
 h5 {
   font-size: 1em; }
@@ -100,9 +96,9 @@ h5 {
 /*** Header, Navigation, & Footer *** */
 header {
   background: #97190f;
-  -webkit-box-shadow: inset 0 0 1em #3a0000;
-  -moz-box-shadow: inset 0 0 1em #3a0000;
-  box-shadow: inset 0 0 1em #3a0000; }
+  -webkit-box-shadow: inset, 0, 0, 1em, #3a0000, 0em, 0em, 0.75em, 0.25em, black;
+  -moz-box-shadow: inset, 0, 0, 1em, #3a0000, 0em, 0em, 0.75em, 0.25em, black;
+  box-shadow: inset, 0, 0, 1em, #3a0000, 0em, 0em, 0.75em, 0.25em, black; }
 
 .header-left {
   width: 50%;
@@ -165,11 +161,6 @@ footer {
 
 /****** Main Content ****** */
 /* 1em = 16px based on body font size */
-.maincontent {
-  -webkit-box-shadow: inset 0 0 1em black;
-  -moz-box-shadow: inset 0 0 1em black;
-  box-shadow: inset 0 0 1em black; }
-
 .contentleft {
   width: 70%;
   float: left; }
