@@ -64,7 +64,7 @@ p {
   margin: 0.625em 0;
   font-size: 1em;
   line-height: 1.3em;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.07em; }
 
 h1 {
   margin: 0.4em 0 0.4em;
@@ -96,9 +96,9 @@ h5 {
 /*** Header, Navigation, & Footer *** */
 header {
   background: #97190f;
-  -webkit-box-shadow: inset, 0, 0, 1em, #3a0000, 0em, 0em, 0.75em, 0.25em, black;
-  -moz-box-shadow: inset, 0, 0, 1em, #3a0000, 0em, 0em, 0.75em, 0.25em, black;
-  box-shadow: inset, 0, 0, 1em, #3a0000, 0em, 0em, 0.75em, 0.25em, black; }
+  -webkit-box-shadow: inset 0 0 1em #3a0000, 0em 0em 1.75em 0.05em #404040;
+  -moz-box-shadow: inset 0 0 1em #3a0000, 0em 0em 1.75em 0.05em #404040;
+  box-shadow: inset 0 0 1em #3a0000, 0em 0em 1.75em 0.05em #404040; }
 
 .header-left {
   width: 50%;
@@ -114,7 +114,7 @@ nav {
   letter-spacing: 0.1em; }
   nav a:hover, nav a:active {
     background: #ccff99;
-    color: #7a130c; }
+    color: #85160d; }
 
 .nav-list {
   margin: 0;
@@ -130,24 +130,24 @@ nav {
     border-radius: 2em; }
   .nav-list .active, .nav-list a:hover {
     background: #ccff99;
-    color: #7a130c; }
+    color: #85160d; }
 
 footer {
-  background: #7a130c;
+  background: #85160d;
   color: white;
   font-family: "IM Fell English", serif;
   font-weight: bold;
   font-size: 0.9em;
   font-letter-spacing: 0.3em;
-  -webkit-box-shadow: inset 0 0 0.5em #3a0000;
-  -moz-box-shadow: inset 0 0 0.5em #3a0000;
-  box-shadow: inset 0 0 0.5em #3a0000; }
+  -webkit-box-shadow: inset 0 0 0.5em #3a0000, 0em -0.1em 2em 0.05em #404040;
+  -moz-box-shadow: inset 0 0 0.5em #3a0000, 0em -0.1em 2em 0.05em #404040;
+  box-shadow: inset 0 0 0.5em #3a0000, 0em -0.1em 2em 0.05em #404040; }
   footer a, footer a:visited, footer a:hover, footer a:active {
     color: white;
     font-weight: bold; }
 
 .footer-left {
-  width: 60%;
+  width: 50%;
   float: left; }
 
 .small-column {
@@ -156,11 +156,16 @@ footer {
   padding: 1em; }
 
 .socialmedia {
-  width: 40%;
-  float: right; }
+  width: 49%;
+  float: right;
+  text-align: right;
+  padding-right: 1%; }
 
 /****** Main Content ****** */
 /* 1em = 16px based on body font size */
+.maincontent {
+  padding: 0.3em 0; }
+
 .contentleft {
   width: 70%;
   float: left; }
@@ -174,7 +179,7 @@ footer {
   width: auto;
   margin: 1.5em 0 2em; }
   .content-inner a, aside a {
-    color: #7a130c;
+    color: #85160d;
     font-weight: bold;
     font-size: 1.05em;
     text-decoration: none; }
@@ -188,7 +193,7 @@ aside {
   text-align: center;
   width: auto;
   margin: 1em 0;
-  padding: 0.5em;
+  padding: 0.6em;
   border-radius: 2em;
   border-style: solid;
   border-width: 0.25em;
@@ -212,7 +217,8 @@ aside {
   font-weight: bold;
   color: #404040;
   text-align: center;
-  padding: 0.25em 0.5em 0.4em;
+  margin: -0.35em -0.2em 0 0;
+  padding: 0.1em 0.4em 0.3em;
   border-radius: 2em;
   border: 0.15em solid #404040;
   background-color: white; }
@@ -222,7 +228,7 @@ aside {
 /* anchor tag */
 a.tooltip {
   position: relative;
-  color: #7a130c;
+  color: #85160d;
   font-weight: normal;
   font-size: 1em;
   text-decoration: underline; }

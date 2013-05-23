@@ -1,0 +1,65 @@
+!!!5
+
+%html(xmlns="http://www.w3.org/1999.xhtml")
+	%head
+		%link(href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700|IM+Fell+English:400,400italic' rel='stylesheet' type='text/css')
+		%meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+		%title
+			Home | Fran&apos;s CSS Adventures
+		%link(rel="stylesheet" type="text/css" href="css/global.css")
+
+	%body
+		/ Header and Navigation
+		%header
+			.container
+				.header-left
+					%h1
+						%a(href="index.html")Fran&apos;s CSS Adventures
+				%nav
+					%ul.nav-list
+						%li
+							%a(href="index.html")Home
+						%li
+							%a(href="about.html")About
+						%li
+							%a(href="experiments.html")Experiments
+						%li
+							%a.active(href="blog.html")Blog
+
+		/ Main Content
+		.maincontent
+			.container
+				.contentleft
+					.content-inner
+						%h2 Fran&apos;s Starter League Blog
+					%section.content-inner
+						%h3 Weeks 1-3: What I&apos;ve learned so far
+					%section.content-inner
+						%h3 My First Mentoring Session
+				.contentright
+					%aside
+						%p
+							Insert flattering photo here.
+						%p.text-center
+							Fran Levy
+					%aside
+						%h4
+							Weeks 1-3: What I&apos;ve learned so far
+					%aside
+						%h4
+							My First Mentoring Session
+					%aside
+						%p
+							Future entries coming soon
+
+		/ Footer
+		%footer
+			.container
+				.footer-left
+					%p
+						&copy; 2013 Fran Levy. All rights reserved.
+				.socialmedia
+					%p
+						Insert social media here
+		%script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js")
+		%script(src="js/script.js")
