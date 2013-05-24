@@ -1,3 +1,4 @@
+// Variables
 $font-base: 1em
 $sans-serif: Tahoma, Geneva, sans-serif
 $serif-body: "Crimson Text", serif
@@ -10,6 +11,7 @@ $brown: #85160D
 $brown-shadow: #3A0000
 $dark-grey: #404040
 
+// Mixins
 @mixin width-float($width, $float)
 	width: $width
 	float: $float
@@ -17,11 +19,6 @@ $dark-grey: #404040
 @mixin nav-now
 	background: $green
 	color: $brown
-
-@mixin inner-shadow($horiz, $vert, $blur, $spread, $color)
-	-webkit-box-shadow: $horiz $vert $blur $spread $color
-	-moz-box-shadow: $horiz $vert $blur $spread $color
-	box-shadow: $horiz $vert $blur $spread $color
 
 @mixin box-shadow($shadows...)
 	-webkit-box-shadow: $shadows
@@ -40,5 +37,5 @@ $dark-grey: #404040
 @import "headernavfooter"
 @import "maincontent"
 @import "alert"
-@import "media"
 @import "tooltip"
+@import "media"

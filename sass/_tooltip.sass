@@ -12,9 +12,7 @@ a.tooltip
 		size: $font-base
 	text-decoration: underline
 
-/* This is the span within anchor tag aka tooltip */
-/* "top: 100%"" is the height of anchor */
-/* "margin-top" offsets the size of the arrow */
+/* This is the span within "a.tooltip" anchor tag */
 a.tooltip span 
 	display: none
 	position: absolute
@@ -29,7 +27,7 @@ a.tooltip span
 		color: $brown-shadow
 		radius: 0.5em
 	//
-		@include inner-shadow(inset, -0.05em, 0.25em, 1em, $brown-shadow)
+		@include box-shadow(inset, -0.05em, 0.25em, 1em, $brown-shadow)
 
 /* show tooltip */
 a.tooltip:hover span 

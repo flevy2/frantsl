@@ -223,7 +223,6 @@ aside {
   border: 0.15em solid #404040;
   background-color: white; }
 
-/*** Media Queries *** */
 /*** Tooltips *** */
 /* anchor tag */
 a.tooltip {
@@ -233,9 +232,7 @@ a.tooltip {
   font-size: 1em;
   text-decoration: underline; }
 
-/* This is the span within anchor tag aka tooltip */
-/* "top: 100%"" is the height of anchor */
-/* "margin-top" offsets the size of the arrow */
+/* This is the span within "a.tooltip" anchor tag */
 a.tooltip span {
   display: none;
   position: absolute;
@@ -277,3 +274,5 @@ a.tooltip span:before {
   border-left: 1.1em solid transparent;
   border-right: 1.1em solid transparent;
   border-top: 1.1em solid #3a0000; }
+
+/*** Media Queries *** */
