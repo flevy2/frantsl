@@ -7,11 +7,17 @@ $white: #FFF
 $black: #000000
 $green: #CF9
 $light-brown: #97190F
-$brown: #85160D
+$brown: #97190F
 $brown-shadow: #3A0000
-$dark-grey: #404040
+$dark-grey: #404040 
 
 // Mixins
+@mixin chegg-white
+	background
+		image: url('../images.chegg-white.png')
+		repeat: repeat
+
+
 @mixin width-float($width, $float)
 	width: $width
 	float: $float

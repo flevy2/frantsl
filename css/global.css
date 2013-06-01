@@ -37,7 +37,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Tahoma, Geneva, sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  background: #97190f;
+  -webkit-box-shadow: inset 0 0 0.6em #3a0000;
+  -moz-box-shadow: inset 0 0 0.6em #3a0000;
+  box-shadow: inset 0 0 0.6em #3a0000; }
 
 .container {
   margin: 0 auto;
@@ -94,12 +98,6 @@ h5 {
   font-size: 1em; }
 
 /*** Header, Navigation, & Footer *** */
-header {
-  background: #97190f;
-  -webkit-box-shadow: inset 0 0 1em #3a0000, 0em 0em 1.75em 0.05em #404040;
-  -moz-box-shadow: inset 0 0 1em #3a0000, 0em 0em 1.75em 0.05em #404040;
-  box-shadow: inset 0 0 1em #3a0000, 0em 0em 1.75em 0.05em #404040; }
-
 .header-left {
   width: 50%;
   float: left; }
@@ -114,7 +112,7 @@ nav {
   letter-spacing: 0.1em; }
   nav a:hover, nav a:active {
     background: #ccff99;
-    color: #85160d; }
+    color: #97190f; }
 
 .nav-list {
   margin: 0;
@@ -130,19 +128,15 @@ nav {
     border-radius: 2em; }
   .nav-list .active, .nav-list a:hover {
     background: #ccff99;
-    color: #85160d; }
+    color: #97190f; }
 
-footer {
-  background: #85160d;
+.footer {
   color: white;
   font-family: "IM Fell English", serif;
   font-weight: bold;
   font-size: 0.9em;
-  font-letter-spacing: 0.3em;
-  -webkit-box-shadow: inset 0 0 0.5em #3a0000, 0em -0.1em 2em 0.05em #404040;
-  -moz-box-shadow: inset 0 0 0.5em #3a0000, 0em -0.1em 2em 0.05em #404040;
-  box-shadow: inset 0 0 0.5em #3a0000, 0em -0.1em 2em 0.05em #404040; }
-  footer a, footer a:visited, footer a:hover, footer a:active {
+  font-letter-spacing: 0.3em; }
+  .footer a, .footer a:visited, .footer a:hover, .footer a:active {
     color: white;
     font-weight: bold; }
 
@@ -164,7 +158,13 @@ footer {
 /****** Main Content ****** */
 /* 1em = 16px based on body font size */
 .maincontent {
-  padding: 0.3em 0; }
+  padding: 0.3em 0;
+  -webkit-box-shadow: 0 0 0.5em #3a0000;
+  -moz-box-shadow: 0 0 0.5em #3a0000;
+  box-shadow: 0 0 0.5em #3a0000; }
+  .maincontent background {
+    image: url("../images.chegg-white.png");
+    repeat: repeat; }
 
 .contentleft {
   width: 70%;
@@ -179,7 +179,7 @@ footer {
   width: auto;
   margin: 1.5em 0 2em; }
   .content-inner a, aside a {
-    color: #85160d;
+    color: #97190f;
     font-weight: bold;
     font-size: 1.05em;
     text-decoration: none; }
@@ -227,7 +227,7 @@ aside {
 /* anchor tag */
 a.tooltip {
   position: relative;
-  color: #85160d;
+  color: #97190f;
   font-weight: normal;
   font-size: 1em;
   text-decoration: underline; }
