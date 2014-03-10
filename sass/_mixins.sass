@@ -1,0 +1,22 @@
+// Mixins
+@mixin chegg-white
+    background:
+        image: url("../images/basecamp-white.jpeg")
+        repeat: repeat
+
+@mixin width-float($width, $float)
+    width: $width
+    float: $float
+
+@mixin nav-now
+    background: $green
+    color: $brown
+
+@mixin box-shadow($shadows...)
+    -webkit-box-shadow: $shadows
+    -moz-box-shadow: $shadows
+    box-shadow: $shadows
+
+@mixin alert($background-color, $border-color)
+    background-color: $background-color
+    border-color: $border-color

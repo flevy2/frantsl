@@ -1,43 +1,9 @@
-// Variables
-$font-base: 1em
-$sans-serif: Tahoma, Geneva, sans-serif
-$serif-body: "Crimson Text", serif
-$serif-title: "IM Fell English", serif
-$white: #FFF
-$black: #000000
-$green: #CF9
-$light-brown: #97190F
-$brown: #6F120B
-$brown-shadow: #3A0000
-$dark-grey: #404040 
-
-// Mixins
-@mixin chegg-white
-	background:
-		image: url("../images/basecamp-white.jpeg")
-		repeat: repeat
-
-@mixin width-float($width, $float)
-	width: $width
-	float: $float
-
-@mixin nav-now
-	background: $green
-	color: $brown
-
-@mixin box-shadow($shadows...)
-	-webkit-box-shadow: $shadows
-	-moz-box-shadow: $shadows
-	box-shadow: $shadows
-
-@mixin alert($background-color, $border-color)
-	background-color: $background-color
-	border-color: $border-color
-
 // Imported 3rd-Party CSS
 @import "reset"
 
 // Imported Stylesheets made for this project
+@import "variables"
+@import "mixins"
 @import "genlayouttypography"
 @import "headernavfooter"
 @import "maincontent"
